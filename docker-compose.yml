@@ -1,0 +1,27 @@
+
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    container_name: 'web'
+    ports:
+      - '80:80'
+    volumes:
+      - ./php:/var/www/html
+  db:
+    image: 'mariadb:latest' 
+    container_name: 'db'
+    restart: 'always'
+    volumes: 
+      - ./db:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: 'foobar123'
+
+  adminer:
+    image: 'adminer:latest'
+    container_name: 'adminer'
+    restart: 'always'
+    ports:
+      - '8080:8080'
