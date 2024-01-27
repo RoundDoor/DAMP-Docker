@@ -2,6 +2,7 @@
 version: '3'
 services:
   web:
+    image: Apache-PHP
     build:
       context: .
       dockerfile: Dockerfile 
