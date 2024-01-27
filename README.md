@@ -5,8 +5,8 @@ Webpage is served on port 80 and Adminer can be accessed on port 8080
 
 To install just clone the directory and run
 
-git clone https://github.com/RoundDoor/DAMP-Docker.git
-cd DAMP-Docker
+git clone https://github.com/RoundDoor/DAMP-Docker.git  \n
+cd DAMP-Docker  \n
 docker-compose up -d
 
 
