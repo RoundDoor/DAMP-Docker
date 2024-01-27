@@ -2,10 +2,10 @@
 version: '3'
 services:
   web:
-    image: Apache-PHP
     build:
       context: .
       dockerfile: Dockerfile 
+    image: 'apache-php'
     container_name: 'web'
     ports:
       - '80:80'
