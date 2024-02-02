@@ -22,6 +22,10 @@ foreach ($items as $item) {
     // Exclude . and ..
     if ($item != '.' && $item != '..') {
         $itemPath = $currentDirectory . '/' . $item;
+        // Check if it's index.php
+        if ($item == "index.php"){
+            continue;
+        }
         // Check if it's a file
         if (is_file($itemPath)) {
             echo '<li><a href="' . htmlspecialchars($item) . '">' . $item . '</a></li>';
