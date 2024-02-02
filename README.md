@@ -9,11 +9,11 @@ To install make sure you have docker installed (https://docs.docker.com/desktop/
 
 ------
 
-'''git clone https://github.com/RoundDoor/DAMP-Docker.git 
+```git clone https://github.com/RoundDoor/DAMP-Docker.git 
 
 cd DAMP-Docker  
 
-docker-compose up -d''' 
+docker-compose up -d``` 
 
 -------
 
