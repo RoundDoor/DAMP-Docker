@@ -7,6 +7,8 @@ Webpage is served on port 80 and Adminer can be accessed on port 8080.
 To install just clone the directory and run.
 To install make sure you have [docker installed](https://docs.docker.com/desktop/install/mac-install/) then just clone the repo and run
 
+To pass files into the container just add them to the ./DAMP-Docker/php folder. 
+
 ------
 
 ```
