@@ -21,6 +21,10 @@ docker-compose up -d
 
 -------
 
-To add more exstenstions to your PHP envimorent edit the Dockerfile as needed. 
+To add more exstenstions to your PHP envimorent edit the Dockerfile as needed.
+
+--------
+
+Composer is installed inside the Docker web container. Access the container terminal to use. 
 
 
