@@ -13,5 +13,12 @@ RUN apt-get update \
     && docker-php-ext-install mysqli pdo pdo_mysql \
     && apt-get clean \ 
     && rm -rf /var/lib/apt/lists/* /tmp/* /usr/share/doc/*
+    
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer -o composer-setup.php \
+    && PHP=$(which php) \
+    && $PHP composer-setup.php --quiet --install-dir=/usr/local/bin --filename=composer \
+    && rm composer-setup.php
+
 
 
